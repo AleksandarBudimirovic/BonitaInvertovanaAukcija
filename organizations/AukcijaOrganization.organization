@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="AukcijaOrganization">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="administrator">
+      <firstName>Jovan</firstName>
+      <lastName>Jovic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="agent.firme1">
+      <firstName>Aleksandar</firstName>
+      <lastName>Aleksic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="klijent1">
+      <firstName>Sinisa</firstName>
+      <lastName>Sinic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="User2">
+      <firstName>Vladislava</firstName>
+      <lastName>Vladic</lastName>
+      <title>Ms</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="klijent2">
+      <firstName>Igor</firstName>
+      <lastName>Igic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Clan">
+      <displayName>Clan</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Aukcija">
+      <displayName>Aukcija</displayName>
+    </group>
+    <group name="Agent" parentPath="/Aukcija">
+      <displayName>Agent</displayName>
+    </group>
+    <group name="Klijent" parentPath="/Aukcija">
+      <displayName>Klijent</displayName>
+    </group>
+    <group name="NeregistrovaniKorisnik" parentPath="/Aukcija">
+      <displayName>Neregistrovani Korisnik</displayName>
+    </group>
+    <group name="Administrator" parentPath="/Aukcija">
+      <displayName>Administrator</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>administrator</userName>
+      <roleName>Clan</roleName>
+      <groupName>Administrator</groupName>
+      <groupParentPath>/Aukcija</groupParentPath>
+    </membership>
+    <membership>
+      <userName>agent.firme1</userName>
+      <roleName>Clan</roleName>
+      <groupName>Agent</groupName>
+      <groupParentPath>/Aukcija</groupParentPath>
+    </membership>
+    <membership>
+      <userName>klijent1</userName>
+      <roleName>Clan</roleName>
+      <groupName>Klijent</groupName>
+      <groupParentPath>/Aukcija</groupParentPath>
+    </membership>
+    <membership>
+      <userName>User2</userName>
+      <roleName>Clan</roleName>
+      <groupName>Agent</groupName>
+      <groupParentPath>/Aukcija</groupParentPath>
+    </membership>
+    <membership>
+      <userName>klijent2</userName>
+      <roleName>Clan</roleName>
+      <groupName>Klijent</groupName>
+      <groupParentPath>/Aukcija</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

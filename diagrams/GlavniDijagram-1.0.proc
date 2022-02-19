@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_g_nI8HCmEeyXNsFPbLjerQ" name="GlavniDijagram" author="Hope" bonitaVersion="7.13.0" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_g_nI8XCmEeyXNsFPbLjerQ" name="Pool1">
-      <elements xmi:type="process:Lane" xmi:id="_g_nI8nCmEeyXNsFPbLjerQ" name="Klijent" actor="_g_nJC3CmEeyXNsFPbLjerQ">
+    <elements xmi:type="process:Pool" xmi:id="_g_nI8XCmEeyXNsFPbLjerQ" name="InvertovanaAukcija">
+      <elements xmi:type="process:Lane" xmi:id="_g_nI8nCmEeyXNsFPbLjerQ" name="Klijent" actor="_OzhvUJGdEeyEgKb-nuTpFA">
         <elements xmi:type="process:StartEvent" xmi:id="_g_nI83CmEeyXNsFPbLjerQ" name="Zahtev za nabavku" outgoing="_g_nJCHCmEeyXNsFPbLjerQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_g_nI9HCmEeyXNsFPbLjerQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_g_nI9XCmEeyXNsFPbLjerQ" name="" content="" returnTypeFixed="true"/>
@@ -201,7 +201,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_ltflYnO8EeyZqK-Za-7q-g" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_ZkxLMHCqEeyXNsFPbLjerQ" name="Agent">
+      <elements xmi:type="process:Lane" xmi:id="_ZkxLMHCqEeyXNsFPbLjerQ" name="Agent" actor="_RG-YoJGdEeyEgKb-nuTpFA">
         <elements xmi:type="process:Task" xmi:id="__QUKgHCqEeyXNsFPbLjerQ" name="Prihvatanje ili odbijanje zahteva" outgoing="_BSA8gHCrEeyXNsFPbLjerQ" incoming="_8iSPAHPAEeyZqK-Za-7q-g" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_i1vAQXCqEeyXNsFPbLjerQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_i1vAQHCqEeyXNsFPbLjerQ" name="" content="" returnTypeFixed="true"/>
@@ -502,7 +502,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_boCh0HSMEey81q0uuuC8TQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_boCh0XSMEey81q0uuuC8TQ" name="ponuda3 == 2" content="ponuda3 == 2" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_g_nJC3CmEeyXNsFPbLjerQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_OzhvUJGdEeyEgKb-nuTpFA" name="Klijent" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_RG-YoJGdEeyEgKb-nuTpFA" name="Agent"/>
+      <actors xmi:type="process:Actor" xmi:id="_VaCJQJGdEeyEgKb-nuTpFA" name="Administrator"/>
       <contract xmi:type="process:Contract" xmi:id="_g_nJDHCmEeyXNsFPbLjerQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_g_nJDXCmEeyXNsFPbLjerQ">
         <name xmi:type="expression:Expression" xmi:id="_g_nJDnCmEeyXNsFPbLjerQ" content="" returnTypeFixed="true"/>

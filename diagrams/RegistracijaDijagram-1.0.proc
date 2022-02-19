@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_e_TNIHCdEeyucd2M9pduLw" name="RegistracijaDijagram" author="Hope" bonitaVersion="7.13.0" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_e_TNIXCdEeyucd2M9pduLw" name="Pool">
-      <elements xmi:type="process:Lane" xmi:id="_e_TNInCdEeyucd2M9pduLw" name="Employee lane" actor="_e_T0M3CdEeyucd2M9pduLw">
+    <elements xmi:type="process:Pool" xmi:id="_e_TNIXCdEeyucd2M9pduLw" name="Registracija">
+      <elements xmi:type="process:Lane" xmi:id="_e_TNInCdEeyucd2M9pduLw" name="Employee lane" actor="_8AegAJGcEeyEgKb-nuTpFA">
         <elements xmi:type="process:StartEvent" xmi:id="_e_TNI3CdEeyucd2M9pduLw" name="Registracija" outgoing="_e_T0MHCdEeyucd2M9pduLw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_e_TNJHCdEeyucd2M9pduLw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_e_TNJXCdEeyucd2M9pduLw" name="" content="" returnTypeFixed="true"/>
@@ -56,7 +56,7 @@
           <contract xmi:type="process:Contract" xmi:id="_glkGuHClEeyXNsFPbLjerQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_glktwHClEeyXNsFPbLjerQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_hjyCcHClEeyXNsFPbLjerQ" name="Unos podataka" outgoing="_rk8CgHCeEeyucd2M9pduLw" incoming="_e_T0MHCdEeyucd2M9pduLw _YxshwHClEeyXNsFPbLjerQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_hjyCcHClEeyXNsFPbLjerQ" name="Unos podataka" outgoing="_rk8CgHCeEeyucd2M9pduLw" incoming="_e_T0MHCdEeyucd2M9pduLw _YxshwHClEeyXNsFPbLjerQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_e_TNKHCdEeyucd2M9pduLw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_e_TNKXCdEeyucd2M9pduLw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_e_TNKnCdEeyucd2M9pduLw" name="" content="" returnTypeFixed="true"/>
@@ -186,7 +186,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_KYmN4HCoEeyXNsFPbLjerQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_KYmN4XCoEeyXNsFPbLjerQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_e_T0M3CdEeyucd2M9pduLw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_8AegAJGcEeyEgKb-nuTpFA" name="NeregistrovaniKorisnik" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_e_T0NHCdEeyucd2M9pduLw"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_e_T0NXCdEeyucd2M9pduLw">
         <name xmi:type="expression:Expression" xmi:id="_e_T0NnCdEeyucd2M9pduLw" content="" returnTypeFixed="true"/>
