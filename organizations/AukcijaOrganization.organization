@@ -47,6 +47,14 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="neregKor">
+      <firstName>Nisam</firstName>
+      <lastName>Registrovan</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Clan">
@@ -99,6 +107,12 @@
       <userName>klijent2</userName>
       <roleName>Clan</roleName>
       <groupName>Klijent</groupName>
+      <groupParentPath>/Aukcija</groupParentPath>
+    </membership>
+    <membership>
+      <userName>neregKor</userName>
+      <roleName>Clan</roleName>
+      <groupName>NeregistrovaniKorisnik</groupName>
       <groupParentPath>/Aukcija</groupParentPath>
     </membership>
   </memberships>
